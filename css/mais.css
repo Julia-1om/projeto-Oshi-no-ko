@@ -1,0 +1,270 @@
+/* FONTES */
+@font-face {
+    font-family: "Cherry Bomb One";
+    src: url("../fonts/CherryBombOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Font stars;
+    src: url("../fonts/Fonstars-4Bo0p.ttf");
+}
+
+@font-face {
+    font-family: Sarala;
+    src: url("../fonts/Sarala-Regular.ttf");
+}
+
+/* TUDO */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    scroll-behavior: smooth;  
+}
+
+
+/* TEXTOS */
+h1 a {
+    font-family: "Cherry Bomb One";
+    color: #fd0365;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 65px;
+}
+
+body{
+    color: white;
+    font-family: 'Sarala';
+    font-size: 18px;
+}
+
+.sub1 {
+    font-family: 'Font stars';
+    font-size: 50px;
+    text-align: center;
+    color: #fd0365;
+    -webkit-text-stroke: 0.5px #fff;
+    padding: 20px;
+}
+
+a {
+    font-family: Sarala;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+.header {
+    background-color: #f172ac; 
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	padding: 0 15px;
+	max-width: 100%;
+    max-height: 90px;
+    position: sticky;
+    position: -webkit-sticky;       
+    top: 0;
+    z-index: 1;
+}
+
+.header .ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header nav li a {
+    margin: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 25px;
+	padding: 10px 20px;
+	border-radius: 50px;
+	transition: 0.4s;
+}
+
+.header nav li a:hover {
+	background-color: #f3035d;
+}
+
+/* SECTION1 */
+.section1 {
+    width: 100vw;
+	height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg, rgb(240, 101, 170) 17%, rgba(255,109,181,1) 42%, rgba(131,58,180,1) 75%, rgba(0,0,0,1) 100%);
+}
+
+.section1 .sub2 {
+    font-family: 'Font stars';
+    font-size: 50px;
+    text-align: center;
+    color: #fd0365;
+    -webkit-text-stroke: 0.5px #fff;
+}
+
+.section1 .informacoes {
+	width: 100%;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.section1 .informacoes p {
+    padding: 10px;
+}
+
+.section1 .grid {
+    display: flex;
+    justify-content: center;
+}
+
+.main .section1 .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+    justify-content: center;
+    border: 10px solid #fd0365;
+    border-radius: 20px;
+    width: 900px;
+    background-color: #fd0365;
+}
+
+.main .section1 .grid-container .grid-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.main .section1 .grid-container .grid-item img {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* SECTION2 */
+.section2 {
+    width: 100vw;
+	height: 100vh;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 17%, rgba(255,109,181,1) 42%, rgba(131,58,180,1) 75%, rgba(0,0,0,1) 100%);
+}
+
+.texto-lista {
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.secao {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-container {
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 80px;
+}
+
+.section2 .secao .img-container img {
+    width: 390px;
+    margin-right: 70px;
+    border: 5px solid #fd0365;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #f7c4db;
+}
+
+
+/* SECTION3 */
+.section3 {
+    width: 100vw;
+	height: 128vh;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 19.5%, rgba(255,109,181,1) 42%, rgba(131,58,180,1) 75%, rgba(0,0,0,1) 95%);
+}
+
+.section3 .sub2 {
+    font-family: 'Font stars';
+    font-size: 50px;
+    text-align: center;
+    color: #fd0365;
+    -webkit-text-stroke: 0.5px #fff;
+    padding-top: 50px;
+}
+
+.forms-img {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.forms {
+    padding-top: 180px;
+}
+
+fieldset {
+    width: 590px;
+}
+
+label {
+    left:19px;
+    margin-left: 15px;
+}
+
+textarea {
+    margin-left: 15px;
+}
+
+.section3 .forms-img .forms .botao {
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px;
+}
+
+.section3 .forms-img .forms .botao .btenviar {
+    color: #fff;
+	background-color: #f172ac;
+	padding: 10px;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+    border-radius: 20px;
+    height: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.imghoshino {
+    margin-top: 130px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    object-fit: fill;
+}
+
+
+/* FOOTER */
+footer {
+    background-image: url("../img/footer.png");
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: brightness(135%);
+}
+
+footer .footerinfo {
+    color: black;
+    text-shadow: #fff 1px 0 7px;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 30px;
+}
+
+footer a:visited {
+    color: purple;
+}

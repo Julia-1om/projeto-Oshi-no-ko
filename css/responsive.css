@@ -1,0 +1,158 @@
+/* RESPONSIVO */
+
+@media (max-width: 1000px) {
+
+    .section1 {
+        width: 100vw;   
+    }
+    .section2 {
+        width: 100vw;
+        background: none;
+    }
+    .section3 {
+        width: 100vw;
+        background: none;
+    }
+
+	body {
+		background: linear-gradient(180deg, rgba(0,0,0,1) 19.5%, rgba(255,109,181,1) 42%, rgba(131,58,180,1) 75%, rgba(0,0,0,1) 95%) ;
+	}
+
+	.fundo-video {
+		display: none;
+	}
+
+    .section1 .header {
+        width: 100%;
+    }
+    .section1 .informacoes {
+        width: 95%;
+    }
+
+    .section1 .informacoes .imgtitulo {
+        width: 50%;
+    }
+
+
+	
+}
+
+
+@media (max-width: 500px) {
+    main {
+        width: 100vw;
+    }
+
+	.section1 {
+        width: 100vw;
+        height: auto;
+    }
+    .section2 {
+        width: 100vw;
+        height: 1400px;
+    }
+    .section3 {
+        width: 100vw;
+        height: auto;
+    }
+
+    /* FONTES */
+    body{
+        font-size: 25px;
+    }
+
+    .sub1 {
+        font-size: 45px;
+    }
+    
+    a {
+        font-size: 20px;
+    }
+
+    /* HEADER */
+    .header {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 a {
+        font-size: 45px;
+    } 
+
+    /* SECTION1 */
+
+
+    .section1 .informacoes {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .section1 .imgtitulo {
+        max-width: 50%;
+    }
+
+    /* SECTION2 */
+    .secao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .video-container {
+        order: 2;
+        
+    }
+      
+    .texto-lista {
+        order: 1;
+    }
+
+    .texto-lista {
+        width: 100%;
+        padding: 10%;
+    }
+    
+    .video-container iframe {
+        width: 100%;
+        padding: 0;
+        height: 182px;
+    }
+
+    /* SECTION3 */
+    
+    .section3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3 .sub2 {
+        padding-top: 0;
+    }
+
+    .section3 .forms-img .imghoshino {
+        display: none;
+    }
+
+    fieldset {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    footer .footerinfo {
+        font-size: 15px;
+        margin: 7px;
+    }
+
+}
+

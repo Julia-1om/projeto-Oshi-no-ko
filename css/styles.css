@@ -1,0 +1,287 @@
+/* FONTES */
+@font-face {
+    font-family: "Cherry Bomb One";
+    src: url("../fonts/CherryBombOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Font stars;
+    src: url("../fonts/Fonstars-4Bo0p.ttf");
+}
+
+@font-face {
+    font-family: Sarala;
+    src: url("../fonts/Sarala-Regular.ttf");
+}
+
+/* TUDO */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    scroll-behavior: smooth;  
+}
+
+
+/* TEXTOS */
+h1 a {
+    font-family: "Cherry Bomb One";
+    color: #fd0365;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 65px;
+}
+
+body{
+    color: white;
+    font-family: 'Sarala';
+    font-size: 18px;
+}
+
+.sub1 {
+    font-family: 'Font stars';
+    font-size: 50px;
+    text-align: center;
+    color: #fd0365;
+    -webkit-text-stroke: 0.5px #fff;
+    padding: 30px;
+}
+
+a {
+    font-family: Sarala;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    z-index: -2;
+}
+
+
+/* HEADER */
+.header {
+    background-color: #f172ac; 
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	padding: 0 15px;
+	max-width: 100%;
+    max-height: 90px;
+}
+
+.header .ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header nav li a {
+    margin: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 25px;
+	padding: 10px 20px;
+	border-radius: 50px;
+	transition: 0.4s;
+}
+
+.header nav li a:hover {
+	background-color: #f3035d;
+}
+
+/* SECTION1 */
+.section1 {
+    width: 100vw;
+	height: 100vh;
+    position: relative;
+}
+
+
+/* INFORMACOES */
+
+.section1 .informacoes .imgtitulo {
+    max-width: 70%;
+}
+
+.section1 .informacoes {
+	width: 50%;
+    margin: 0 15px;
+}
+
+.section1 .informacoes p {
+    padding: 35px 10px;
+}
+
+.section1 .informacoes .btsaibamais {
+	background-color: #f3035d;
+	padding: 15px;
+	font-size: 18px;
+	cursor: pointer;
+	border: none;
+    border-radius: 25px;
+    height: 50px;
+	transition: 0.35s all ease-in-out;
+    align-items: center;
+    display: flex;
+}
+
+.section1 .informacoes .btsaibamais:hover {
+	transform: scale(1.1);
+}
+
+
+/* VIDEO DE FUNDO */
+.fundo-video {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.fundo-video .video {
+    height: 100vh;
+    margin-left: auto;
+}
+
+.fundo-video::after {
+	content: ' ';
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 35%, rgba(212,96,172,0.22172619047619047) 74%, rgba(0,0,0,1) 91%);
+}
+
+
+/* SECTION2 */
+.section2 {
+    width: 100vw;
+	height: 100vh;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 17%, rgba(255,109,181,1) 42%, rgba(131,58,180,1) 75%, rgba(0,0,0,1) 100%);
+}
+
+.video-container {
+    flex: 1;
+    margin-left: 5%;
+    padding-top: 8%;
+}
+
+.texto-lista {
+    width: 700px;
+    justify-content: center;
+    padding: 80px;
+}
+
+.secao {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-container iframe {
+    border: 5px solid #fd0365;
+    border-radius: 39px;
+    height: 319px;
+}
+
+
+
+/* SECTION3 */
+.section3 {
+    width: 100vw;
+	height: 128vh;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 19.5%, rgba(255,109,181,1) 42%, rgba(131,58,180,1) 75%, rgba(0,0,0,1) 95%);
+}
+
+.section3 .sub2 {
+    font-family: 'Font stars';
+    font-size: 50px;
+    text-align: center;
+    color: #fd0365;
+    -webkit-text-stroke: 0.5px #fff;
+    padding-top: 50px;
+}
+
+
+.forms-img {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.forms {
+    padding-top: 110px;
+}
+
+fieldset {
+    width: 90%;
+    margin: 0 auto;
+}
+
+label {
+    left:19px;
+    margin-left: 15px;
+}
+
+textarea {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+input {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.section3 .forms-img .forms .botao {
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px;
+}
+
+.section3 .forms-img .forms .botao .btenviar {
+    color: #fff;
+	background-color: #f172ac;
+	padding: 10px;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+    border-radius: 20px;
+    height: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.imghoshino {
+    height: 103vh;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-image: url("../img/footer.png");
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: brightness(135%);
+}
+
+footer .footerinfo {
+    color: black;
+    text-shadow: #fff 1px 0 7px;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 30px;
+}
